@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+body {
+    background: linear-gradient(#000000, #222222, #000000);
+    height: 4000px;
+  }
+
+.dark-theme {
+    background: #fff;
+}

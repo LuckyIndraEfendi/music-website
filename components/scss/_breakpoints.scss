@@ -1,0 +1,37 @@
+@import "variable";
+
+@media (max-width:1110px){
+    nav {
+        ul {
+            position: absolute;
+            flex-direction: column;
+            height: 100vh;
+            top: 0;
+            right: 0;
+            width: 100%;
+            padding-top: 7vh;
+            justify-content: space-evenly;
+            background: rgba(0, 0, 0,1);
+            z-index: -2;
+            transform: translateY(-100%);
+            transition: 1.2s all ease;
+            &.active {
+                transform: translateY(0);
+            }
+        }
+        .profile {
+            position: absolute;
+            left: 5%;
+            .dark-mode {
+                display: none;
+            }
+        }
+        .hamburger-menu {
+            display: block;
+            margin-right: 10px;
+            position: absolute;
+            right: 0;
+        }
+    }
+   
+}

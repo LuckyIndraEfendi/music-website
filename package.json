@@ -1,0 +1,19 @@
+{
+  "name": "create-yt-music",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "npm run dev"
+  },
+  "keywords": [
+    "Lucky"
+  ],
+  "author": "Lucky",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}

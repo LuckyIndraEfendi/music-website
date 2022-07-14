@@ -1,0 +1,106 @@
+@import "variable";
+@import "breakpoints";
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Merriweather+Sans:wght@300&family=Mochiy+Pop+P+One&family=Montserrat:wght@200;600&family=Poppins:wght@200&family=Prompt:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    align-items: center;
+    background: #000;
+    border-bottom: .1px solid rgb(131, 131, 131);
+    position: fixed;
+    width: 100%;
+
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    ul {
+        display: flex;
+        width: 55%;
+        justify-content: space-between;
+        align-items: center;
+
+        li {
+          
+            a {
+                color: map-get($colors, "light" );
+                font-family: 'Montserrat', sans-serif;
+                font-weight:bolder;
+                font-size: 1.1em;
+                transition: .4s all ease;
+            }
+            &:hover a {
+                color: map-get($colors, "warning" );
+            }
+        }
+
+        li:last-child{
+            form {
+                input {
+                    padding: 7px 10px;
+                    border-radius: 5px;
+                    background: #16151d;
+                    border: 1px solid #1b1b1b;
+                    color: rgb(247, 247, 247);
+
+                    &:focus {
+                        outline: 1px solid rgb(90, 90, 90);
+                   
+                    }
+                    &:focus::placeholder {
+                        color: rgba(255, 255, 255,.9);
+                     }
+                }
+                button{
+                    padding: 7px 10px;
+                    border-radius: 5px;
+                    background: #16151d;
+                    border: 1px solid #1b1b1b;
+                    color: rgb(247, 247, 247);
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+
+                    &:focus {
+                        outline: 1px solid rgb(90, 90, 90);
+                    }
+                }
+            }
+        }
+    }
+    .profile {
+        display: flex;
+        align-items: center;
+        width: 150px;
+        justify-content: space-between;
+        
+       .dark-mode {
+            color: #fff;
+            font-size: 2em;
+            cursor: pointer;
+       }
+        img {
+            border-radius: 50%;
+            width: 40px;
+        }
+        
+    }
+    .hamburger-menu {
+        display: none;
+        .toggle {
+           i {
+            color: map-get($colors, "light" );
+            font-size: 2.5em;
+          
+
+            &:hover {
+                cursor: pointer;
+            }
+           }
+        }
+    }
+}
